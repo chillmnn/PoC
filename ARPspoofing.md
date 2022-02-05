@@ -30,7 +30,7 @@ This allows the at tacker to intercept and inspect incoming internet traffic and
 
 ### Enable port forwarding on attack box
 
-* `echo 1 > /proc/sys/net/ipv4/ip_forward`
+* `sudo sysctl net.ipv4.ip_forward=1`
 
 ### Generate fake ARP replies to the victim. This disguises the attack box as the router.
 
